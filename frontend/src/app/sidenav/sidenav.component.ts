@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-sidenav',
@@ -6,6 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./sidenav.component.css']
 })
 export class SidenavComponent {
+  @Input() sideNavStatus: boolean = false;
+
   list = [
     {
       number: '1',

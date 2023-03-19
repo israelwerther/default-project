@@ -1,11 +1,11 @@
 <div class="container-fluid g-0">
-  <app-header></app-header>
+  <app-header (sideNavToggled)="sideNavStatus = $event;"></app-header>
 
   <main>
-    <app-sidenav></app-sidenav>
+    <app-sidenav [sideNavStatus]="sideNavStatus" [ngClass]="{'app-side-nav-open': sideNavStatus}"></app-sidenav>
 
-    <div class="display-area">
-      <p>Area</p>
+    <div class="display-area p-3">
+      <p class="fs-1 fw-bold fst-italic">Area</p>
     </div>
   </main>
 
