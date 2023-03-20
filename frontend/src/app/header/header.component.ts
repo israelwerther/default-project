@@ -8,6 +8,7 @@ import { Component, EventEmitter, Output } from '@angular/core';
 export class HeaderComponent {
 
   @Output() sideNavToggled = new EventEmitter<boolean>();
+
   menuStatus: boolean = false;
 
   SideNavToggle() {
